@@ -16,6 +16,7 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
+   
 }
 
 #page-loading-blocs-notifaction {
@@ -360,6 +361,14 @@ a:hover {
     float: right;
     position: relative;
     z-index: 2;
+}
+
+
+@media (max-device-width:480px) and (orientation:landscape) {
+    .navbar-fixed-bottom .navbar-collapse,
+    .navbar-fixed-top .navbar-collapse {
+        max-height: 200px
+    }
 }
 
 @media (min-width: 768px) {
