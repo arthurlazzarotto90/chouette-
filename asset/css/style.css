@@ -5,6 +5,9 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+ 
+    
 }
 
 a,
@@ -92,7 +95,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("asset/img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -363,6 +366,9 @@ a:hover {
     z-index: 2;
 }
 
+.image_text {
+    width: 100%;
+}
 
 
 
@@ -405,6 +411,7 @@ a:hover {
         float: none;
         margin: 10px auto 0;
     }
+   
 }
 
 .nav > li > .dropdown a {
@@ -770,8 +777,9 @@ h4 {
     background-color: #FFFFFF;
 }
 
-.bgc-dark-slate-blue {
-    background-color: #364577;
+.bgc-dark-slate-blue {  
+    background-color: #2b2b9e;
+
 }
 
 .bgc-atomic-tangerine {
@@ -814,19 +822,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("/Users/arthur/Desktop/P4_lazzarotto_arthur_zip/chouette-/asset/img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("/Users/arthur/Desktop/P4_lazzarotto_arthur_zip/chouette-/asset/img/lines-h2-bg.png");
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.jpg");
+    background-image: url("/Users/arthur/Desktop/P4_lazzarotto_arthur_zip/chouette-/asset/img/la-chouette-agence-banniere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("/Users/arthur/Desktop/P4_lazzarotto_arthur_zip/chouette-/asset/img/image-de-presentation.bmp");
 }
 
 @media (max-width: 1024px) {
