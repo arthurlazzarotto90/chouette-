@@ -5,9 +5,6 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
- 
-    
 }
 
 a,
@@ -19,7 +16,6 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
-   
 }
 
 #page-loading-blocs-notifaction {
@@ -95,7 +91,7 @@ a:hover {
 }
 
 .texture-paper::before {
-    background: url("asset/img/texture-paper.png");
+    background: url("img/texture-paper.png");
     background-size: 280px 280px;
 }
 
@@ -366,12 +362,6 @@ a:hover {
     z-index: 2;
 }
 
-.image_text {
-    width: 100%;
-}
-
-
-
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
@@ -411,7 +401,6 @@ a:hover {
         float: none;
         margin: 10px auto 0;
     }
-   
 }
 
 .nav > li > .dropdown a {
@@ -777,9 +766,8 @@ h4 {
     background-color: #FFFFFF;
 }
 
-.bgc-dark-slate-blue {  
-    background-color: #2b2b9e;
-
+.bgc-dark-slate-blue {
+    background-color: #364577;
 }
 
 .bgc-atomic-tangerine {
@@ -822,19 +810,19 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("/Users/arthur/Desktop/P4_lazzarotto_arthur_zip/chouette-/asset/img/dots-bg.png");
+    background-image: url("img/dots-bg.png");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("/Users/arthur/Desktop/P4_lazzarotto_arthur_zip/chouette-/asset/img/lines-h2-bg.png");
+    background-image: url("img/lines-h2-bg.png");
 }
 
 .bg-banniere {
-    background-image: url("/asset/img/la-chouette-agence-banniere.jpg");
+    background-image: url("img/la-chouette-agence-banniere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("/Users/arthur/Desktop/P4_lazzarotto_arthur_zip/chouette-/asset/img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.bmp");
 }
 
 @media (max-width: 1024px) {
@@ -860,7 +848,17 @@ h4 {
     }
 }
 
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .b-parallax {
+        background-attachment: scroll;
+    }
+}
 
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+    .b-parallax {
+        background-attachment: scroll;
+    }
+}
 
 @media (max-width: 991px) {
     .container {
@@ -874,7 +872,10 @@ h4 {
         overflow-x: hidden;
         position: relative;
     }
-   
+    .bloc {
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
+    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -883,10 +884,10 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-    
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
     }
 }
-
 
 @media (max-width: 767px) {
     .page-container {

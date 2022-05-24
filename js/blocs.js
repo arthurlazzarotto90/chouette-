@@ -124,7 +124,7 @@ function setUpVisibilityToggle() {
         } else a($("#" + e));
 
         function a(t) {
-            t.is("./asset/img") ? t.toggle() : t.slideToggle()
+            t.is("img") ? t.toggle() : t.slideToggle()
         }
     })
 }
